@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -g -I./cJSON -I./include
+CFLAGS = -Wall -g -I./include
 SRC = src/comandos.c src/data.c src/cli.c
 OBJ = $(SRC:.c=.o)
 

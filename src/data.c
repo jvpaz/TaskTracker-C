@@ -16,6 +16,12 @@ void carregarDados(char data[]){
     long Arq_Tamanho = ftell(Arq);
     fseek(Arq, 0, SEEK_SET);
 
+    if (Arq_Tamanho == 0) //Caso o arquivo esteja vazio, pula a etapa de procurar por tarefas.
+    {
+        return;
+    }
+    
+
     char *buffer = (char *)malloc(Arq_Tamanho * sizeof(char) + 1);
 
     fread(buffer, 1, Arq_Tamanho, Arq);
