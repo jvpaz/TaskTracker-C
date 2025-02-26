@@ -12,5 +12,5 @@ lib: $(OBJ)
 	ar rcs libtasks.a $(OBJ)
 
 clean:
-	del /f src\*.o *.a main.exe
+	del /f src\*.o *.a taskTracker.exe
 
