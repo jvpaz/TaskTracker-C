@@ -17,7 +17,7 @@ void cliReceberComando(int argc, char *argv[])
 
     if (strcmp(comando, "add") == 0)   
         cliAdicionar(argc,argv);
-    else if (strcmp(comando, "delete") == 0)
+    else if (strcmp(comando, "del") == 0)
         cliDeletar(argc, argv);
     else if (strcmp(comando, "list") == 0)
         cliListar(argv);
@@ -36,7 +36,7 @@ static void cliAdicionar(int argc, char *argv[])
     if (argc < 3)
         {
             printf("Syntax invalida!\n");
-            printf("Exemplo: .\\tasktrack add <descricao_da_tarefa>\n");
+            printf("Exemplo: .\\tasktrack add \"tarefa_descricao\"\n");
             return;
         }
         adicionarDados(argv[2]);
@@ -46,7 +46,7 @@ static void cliDeletar(int argc, char *argv[])
     if (argc < 3)
         {
             printf("Syntax invalida!\n");
-            printf("Exemplo: .\\tasktrack delete <id_da_tarefa>\n");
+            printf("Exemplo: .\\tasktrack del <tarefa_id>\n");
             return;
         }
         deletarDados(atoi(argv[2]));
@@ -60,7 +60,7 @@ static void cliEditar(int argc, char *argv[])
     if (argc < 4)
         {
             printf("Syntax invalida!\n");
-            printf("Exemplo: .\\tasktrack update <id_da_tarefa> <nova_descricao>\n");
+            printf("Exemplo: .\\tasktrack update <tarefa_id> \"nova_descricao\"\n");
             return;
         }
         editarDados(atoi(argv[2]), argv[3]);
@@ -70,7 +70,7 @@ static void cliMarcarCompleta(int argc, char *argv[])
     if (argc < 3)
         {
             printf("Syntax invalida!\n");
-            printf("Exemplo: .\\tasktrack marcar_completa <id_da_tarefa>\n");
+            printf("Exemplo: .\\tasktrack marcar_completa <tarefa_id>\n");
             return;
         }
         marcarCompleta(atoi(argv[2]));
@@ -80,7 +80,7 @@ static void cliMarcarAndamento(int argc, char *argv[])
     if (argc < 3)
         {
             printf("Syntax invalida!\n");
-            printf("Exemplo: .\\tasktrack marcar_andamento <id_da_tarefa>\n");
+            printf("Exemplo: .\\tasktrack marcar_andamento <tarefa_id>\n");
             return;
         }
         marcarEmAndamento(atoi(argv[2]));
