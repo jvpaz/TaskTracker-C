@@ -3,17 +3,17 @@
 Um simples **Gerenciador de Tarefas** desenvolvido em C, inspirado pela idéia de projeto apresentada em [Roadmap.sh](https://roadmap.sh/projects/task-tracker). 
 
 ## Configuração e compilação
-1. Clone o repositório:
+Clone o repositório:
    ```bash
    git clone https://github.com/jvpaz/TaskTracker-C.git
    ```
 
-2. Compile o projeto utilizando o *Makefile*
+Compile o projeto utilizando o *Makefile*
    ```bash
    make all
    ```
 
-3. Limpe os arquivos gerados, caso seja necessário:
+Limpe os arquivos gerados, caso seja necessário:
    ```bash
    make clean
    ```
@@ -24,19 +24,19 @@ Um simples **Gerenciador de Tarefas** desenvolvido em C, inspirado pela idéia d
 ## Adicionar tarefa
    ```bash
    .\taskTracker add "Descrição"
-  ```
+   ```
 ---
 
 ## Deletar tarefa
-  ```bash
+   ```bash
   .\taskTracker delete <id_da_tarefa>
-  ```
+   ```
 ---
 
 ## Listar tarefas
- ```bash
+   ```bash
 .\taskTracker list
-```
+   ```
 ### Listar tarefas completas
 ```bash
 .\taskTracker list completa
