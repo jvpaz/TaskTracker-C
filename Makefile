@@ -13,7 +13,7 @@ endif
 all: main
 
 main: lib
-	$(CC) $(CFLAGS) src\taskTracker.c -o taskTracker -L. -ltasks
+	$(CC) $(CFLAGS) src/taskTracker.c -o taskTracker -L. -ltasks
 
 lib: $(OBJ)
 	ar rcs libtasks.a $(OBJ)
