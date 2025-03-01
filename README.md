@@ -29,7 +29,7 @@ Limpe os arquivos gerados, caso seja necessário:
 
 ## Deletar tarefa
    ```bash
-  .\taskTracker delete <id_da_tarefa>
+  .\taskTracker delete <tarefa_id>
    ```
 ---
 
